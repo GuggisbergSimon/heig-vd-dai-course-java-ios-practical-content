@@ -9,7 +9,11 @@ import java.io.IOException;
 public class BufferedTextFileWriter implements Writable {
     @Override
     public void write(String filename, int sizeInBytes) throws IOException {
-        // TODO : implement this method
-        throw new UnsupportedOperationException("Not implemented yet");
+        BufferedWriter buffer = new BufferedWriter(new FileWriter(filename));
+        for (int i = 0; i < sizeInBytes; i++) {
+            buffer.write(0);
+        }
+        buffer.flush();
+        buffer.close();
     }
 }

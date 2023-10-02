@@ -8,7 +8,8 @@ import java.io.IOException;
 public class TextFileReader implements Readable {
     @Override
     public void read(String filename) throws IOException {
-        // TODO : implement this method
-        throw new UnsupportedOperationException("Not implemented yet");
+        FileReader reader = new FileReader(filename);
+        while(reader.read() != -1) {}
+        reader.close();
     }
 }

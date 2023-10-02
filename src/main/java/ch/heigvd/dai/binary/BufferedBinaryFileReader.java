@@ -10,7 +10,8 @@ public class BufferedBinaryFileReader implements Readable {
 
     @Override
     public void read(String filename) throws IOException {
-        // TODO : implement this method
-        throw new UnsupportedOperationException("Not implemented yet");
+        BufferedInputStream buffer = new BufferedInputStream(new FileInputStream(filename));
+        while (buffer.read() != -1) {}
+        buffer.close();
     }
 }

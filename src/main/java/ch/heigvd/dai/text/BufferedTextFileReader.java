@@ -9,7 +9,8 @@ import java.io.IOException;
 public class BufferedTextFileReader implements Readable {
     @Override
     public void read(String filename) throws IOException {
-        // TODO : implement this method
-        throw new UnsupportedOperationException("Not implemented yet");
+        BufferedReader buffer = new BufferedReader(new FileReader(filename));
+        while(buffer.read() != -1) {}
+        buffer.close();
     }
 }

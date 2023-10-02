@@ -9,7 +9,10 @@ public class TextFileWriter implements Writable {
 
     @Override
     public void write(String filename, int sizeInBytes) throws IOException {
-        // TODO : implement this method
-        throw new UnsupportedOperationException("Not implemented yet");
+        FileWriter writer = new FileWriter(filename);
+        for (int i = 0; i < sizeInBytes; i++) {
+            writer.write(0);
+        }
+        writer.close();
     }
 }
