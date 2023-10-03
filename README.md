@@ -27,4 +27,5 @@ The difference between binary and text data is that text data can be read direct
 
 Character encoding is the way to encode a character for a computer. The current norm is UTF-8 in most cases as it helps cover all languages. But using less advanced encoding such as ASCII or ANSI variants, but that makes special characters like emoji not being displayed.
 
-Methodology ? Not sure what you're referring to.
+As for the methodology being used, We could use more samples to eliminate outliers or applied only between the winning possibilities (as to avoid losing too much time waiting on the program execution) but I decided otherwise given the small scope of the project.
+
