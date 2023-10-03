@@ -11,6 +11,10 @@
 *.iml
 *.ipr
 
+# binary and text files
+*.bin
+*.txt
+
 # Editor-based HTTP Client requests
 .idea/httpRequests/
 
